@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9c9c9"
+    android:id="@+id/two_tab">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/all_tv_show_list_my"
+                android:dividerHeight="0dp"
+                android:divider="@color/transparent"
+                android:layout_weight="1"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar_my"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:visibility="visible"
+                android:background="@drawable/progressbar_drawable" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/yourTv"
+                android:background="@drawable/circle" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

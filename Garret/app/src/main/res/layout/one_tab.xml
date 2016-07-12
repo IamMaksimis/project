@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9c9c9"
+    android:id="@+id/one_tab">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false"
+            android:isScrollContainer="false">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/searchText"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:hint="search"
+                android:imeOptions="actionSearch"
+                android:inputType="textPersonName"
+                android:layout_weight="10"
+                android:textColor="#191818"
+                android:background="@drawable/bg_edittext" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/backspase"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/abc_ic_clear_mtrl_alpha" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/searchBtn"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/abc_ic_search_api_mtrl_alpha" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/all_tv_show_list"
+                android:dividerHeight="0dp"
+                android:divider="@color/transparent"
+                android:layout_weight="1"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:visibility="visible"
+                android:background="@drawable/progressbar_drawable" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

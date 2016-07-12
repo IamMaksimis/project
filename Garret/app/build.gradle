@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        garret {
+            keyAlias 'IamMaksimus'
+            keyPassword '48Ab0015749'
+            storeFile file('C:/Users/111/Desktop/Garret/keygarret.jks')
+            storePassword '48Ab0015749'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.iammaksimus.garret"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 2
+        versionName "1.5"
+    }
+    buildTypes {
+        garret {
+            signingConfig signingConfigs.garret
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.microsoft.azure:azure-mobile-services-android-sdk:2.0.2+'
+}

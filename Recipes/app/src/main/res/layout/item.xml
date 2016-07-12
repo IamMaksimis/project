@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:background="#ffffff">
+
+    <TextView
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_height="30dp"
+        android:text="New Text"
+        android:id="@+id/nameItem"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/coverItem"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginLeft="15dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="50dp"
+                    android:background="#ce3c4eb7">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Рецептика"
+                        android:id="@+id/textView7"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold|italic"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:background="#ffffff"></LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Категория:"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/textView2"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/minRecipe"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/categoryItem" />
+
+            <TextView
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ингредиенты:"
+                android:id="@+id/textView3"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="New Text"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/ingredientsItem" />
+
+            <TextView
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Национальная кухня:"
+                android:id="@+id/textView4"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/nationalItem" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

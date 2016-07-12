@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Регистрация garret"
+                android:id="@+id/welcomReg"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/nickText"
+                android:layout_marginTop="25dp"
+                android:textColor="#090909"
+                android:hint="Nick:"
+                android:background="@drawable/edit_text_login" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/passText"
+                android:textColor="#353333"
+                android:password="true"
+                android:hint="Password"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_login" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/nameText"
+                android:textColor="#1d1c1c"
+                android:hint="Name"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_login" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/fnameText"
+                android:textColor="#3a3838"
+                android:hint="FirstName"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_login" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Регистрация"
+                android:id="@+id/regBtn"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:background="@drawable/button_custom" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/errorText" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar3"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                android:background="@drawable/progressbar_drawable" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

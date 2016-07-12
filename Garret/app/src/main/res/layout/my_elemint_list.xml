@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="143dp">
+
+    <RelativeLayout
+        android:id="@+id/el_my"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:id="@+id/cover_tv_show_my"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="125dp"
+            android:background="#ffffff"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/tv_data_my"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:shadowColor="#2c2b2b"
+                        android:textIsSelectable="false"
+                        android:textColorHighlight="#981d1d"
+                        android:background="#ffffff" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="right"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView4"
+                            android:background="@drawable/angle_mini"
+                            android:scaleType="fitCenter"
+                            android:layout_marginRight="-30dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="-2dp">
+
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView2_my"
+                            android:background="@drawable/angle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp">
+
+                            <TextView
+                                android:ellipsize="none"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Стрела (Arrow)"
+                                android:id="@+id/name_tv_show_my"
+                                android:layout_gravity="right"
+                                android:gravity="right" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp">
+
+                            <TextView
+                                android:ellipsize="marquee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Сезон: 4"
+                                android:id="@+id/sezon_tv_show_my"
+                                android:layout_gravity="right" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp">
+
+                            <TextView
+                                android:ellipsize="marquee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Эпизод: 10"
+                                android:id="@+id/episod_tv_show_my"
+                                android:layout_gravity="right" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Название: Blood Debts"
+                                android:id="@+id/name_episod_tv_show_my"
+                                android:layout_gravity="right"
+                                android:gravity="right" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

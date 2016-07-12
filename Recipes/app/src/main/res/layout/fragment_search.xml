@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/search"
+    tools:context="com.iammaksimus.recipes.SearchFragment"
+    android:background="#ffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/categorySpinner"
+        android:layout_marginRight="5dp"
+        android:gravity="right"
+        android:layout_marginLeft="160dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/nationSpinner"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Категория:"
+        android:id="@+id/textView5"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Национальная кухня:"
+        android:id="@+id/textView6"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical" />
+</FrameLayout>
